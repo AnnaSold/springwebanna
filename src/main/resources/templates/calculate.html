@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p><input placeholder="a" name="a"></p>
+    <p>Считаем площадь и периметр</p>
+    <p><input placeholder="b" name="b"></p>
+    <p><button formaction="/calculate">Считаем</button></p>
+</form>
+<p>площадь <span th:text="${result}" /></p>
+<p>периметр <span th:text="${result2}" /></p>
+<p> <span th:text="${errorMsg}" /></p>
+</body>
+</html>
